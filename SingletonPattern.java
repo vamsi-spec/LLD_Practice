@@ -63,8 +63,8 @@ class SingletonPattern {
         ConfigManager con = ConfigManager.getInstance();
         System.out.println(con.get("dbUrl"));
         System.out.println(con.get("appName"));
-        System.out.println(config2.get("apiKey"));
+        System.out.println(con.get("apiKey"));
 
-        System.out.println(config == config2);
+        System.out.println(config == con);
     }
 }

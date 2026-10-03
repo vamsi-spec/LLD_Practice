@@ -3,15 +3,15 @@ interface TaxCalculator {
 }
 
 class IndiaTaxCalc implements TaxCalculator {
-    @java.lang.Override
-    public void calculateTax(double amount) {
+    @Override
+    public double calculateTax(double amount) {
         return 0.18 * amount;
     }
 }
 
 class USTaxCalculator implements TaxCalculator {
     @java.lang.Override
-    public void calculateTax(double amount) {
+    public double calculateTax(double amount) {
         return 0.8 * amount;
     }
 }
